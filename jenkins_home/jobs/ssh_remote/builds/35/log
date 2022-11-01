@@ -1,0 +1,67 @@
+Started by user [8mha:////4EhsFNDgOXrviJORZRsP80CcdVHpMhjB3vst5ulqTF8SAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9osTijNzM7EQA8kke1sMAAAA=[0mrashmika
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ssh_remote
+The recommended git tool is: NONE
+using credential 9a8e5cca-d2ee-4f20-858a-e231c62099ab
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/ssh_remote/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://20.1.190.133:8090/jenkins/maven.git # timeout=10
+Fetching upstream changes from http://20.1.190.133:8090/jenkins/maven.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- http://20.1.190.133:8090/jenkins/maven.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision cbd6fd41c441731ad3b115621632b6748c620468 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cbd6fd41c441731ad3b115621632b6748c620468 # timeout=10
+Commit message: "last testing"
+ > git rev-list --no-walk cbd6fd41c441731ad3b115621632b6748c620468 # timeout=10
+[ssh_remote] $ /bin/sh -xe /tmp/jenkins8940460074989195445.sh
++ echo 35
++ echo 35
++ echo jenkins-ssh_remote-35
++ echo ssh_remote
++ pwd
+/var/jenkins_home/workspace/ssh_remote
++ scp -i /var/jenkins_home/ansible/dias_key /tmp/.auth root@docker-host:/tmp/.auth
+[SSH] script:
+
+/home/jenkins/code/automate_new.sh
+
+[SSH] executing...
+Cloning into 'maven'...
+Build number is 35
+Build tag is jenkins-ssh_remote-35
+Job name is ssh_remote
+Build ID is 35
+this is the  ssh_remote and this is it is  jenkins-ssh_remote-35
+*****************************
+******Building Jar***********
+PROCESSING...................
+**deleting old cache.....****
+**cloning new repo***********
+**building jar on docker*****
+cp: cannot stat 'maven/target/my-app-1.0-SNAPSHOT.jar': No such file or directory
+no configuration file provided: not found
+Error response from daemon: No such image: java-app:jenkins-ssh_remote-35
+tag does not exist: 20.1.190.133:5000/rashmika_manawadu:35
+Error: No such image: java-app:jenkins-ssh_remote-35
+Error: No such image: 20.1.190.133:5000/rashmika_manawadu:35
+destroying docker maven image
+my-maven-project
+**coping build to prod********
+*****************************
+******Building Docker********
+*****************************
+Sending image to the repo****
+The push refers to repository [20.1.190.133:5000/rashmika_manawadu]
+*****************************
+**Cleaning up images*********
+******************************
+******Completed**************
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

@@ -1,0 +1,13 @@
+Started on Nov 1, 2022, 1:33:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision cbd6fd41c441731ad3b115621632b6748c620468 (refs/remotes/origin/main)
+The recommended git tool is: NONE
+using credential 9a8e5cca-d2ee-4f20-858a-e231c62099ab
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials 
+ > git ls-remote -h -- http://20.1.190.133:8090/jenkins/maven.git # timeout=10
+Found 1 remote heads on http://20.1.190.133:8090/jenkins/maven.git
+[poll] Latest remote head revision on refs/heads/main is: cbd6fd41c441731ad3b115621632b6748c620468 - already built by 37
+Done. Took 0.93 sec
+No changes

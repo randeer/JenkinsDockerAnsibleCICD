@@ -1,0 +1,37 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>echo $BUILD_NUMBER &gt; /tmp/.auth
+echo $BUILD_ID &gt;&gt; /tmp/.auth
+echo $BUILD_TAG &gt;&gt; /tmp/.auth
+echo $JOB_NAME &gt;&gt; /tmp/.auth
+
+pwd
+
+scp -i /var/jenkins_home/ansible/dias_key /tmp/.auth root@docker-host:/tmp/.auth</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+    <org.jvnet.hudson.plugins.SSHBuilder plugin="ssh@2.6.1">
+      <siteName>root@docker-host:22</siteName>
+      <command>pwd
+
+/home/jenkins/code/web_automate-2.sh</command>
+      <execEachLine>false</execEachLine>
+      <hideCommand>false</hideCommand>
+    </org.jvnet.hudson.plugins.SSHBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

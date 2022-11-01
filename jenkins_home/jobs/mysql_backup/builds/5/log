@@ -1,0 +1,37 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/mysql_backup
+[SSH] executing pre build script:
+DATABASE_HOST="db_host"
+SQL_PASSWD=**********
+
+/home/dias/backup_script.sh $DATABASE_HOST $SQL_PASSWD
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+INFO: Scanning...
+INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+
+Job ad8d0601-9280-b644-7d00-24b58f1c90b7 has started
+Log file is located at: /home/dias/.azcopy/ad8d0601-9280-b644-7d00-24b58f1c90b7.log
+
+100.0 %, 1 Done, 0 Failed, 0 Pending, 0 Skipped, 1 Total, 2-sec Throughput (Mb/s): 14.9866
+
+
+Job ad8d0601-9280-b644-7d00-24b58f1c90b7 summary
+Elapsed Time (Minutes): 0.0333
+Number of File Transfers: 1
+Number of Folder Property Transfers: 0
+Total Number of Transfers: 1
+Number of Transfers Completed: 1
+Number of Transfers Failed: 0
+Number of Transfers Skipped: 0
+TotalBytesTransferred: 3747779
+Final Job Status: Completed
+
+
+[SSH] completed
+[SSH] exit-status: 0
+
+[SSH] executing post build script:
+
+
+Finished: SUCCESS

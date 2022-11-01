@@ -1,0 +1,17 @@
+Started by user [8mha:////4EhsFNDgOXrviJORZRsP80CcdVHpMhjB3vst5ulqTF8SAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9osTijNzM7EQA8kke1sMAAAA=[0mrashmika
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/mysql_backup
+[SSH] executing pre build script:
+DATABASE_HOST="db_host"
+SQL_PASSWD=**********
+
+/home/dias/sql_backup.sh   $DATABASE_HOST $SQL_PASSWD $STORAGE_ACCOUNT $CONTAINER
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+
+[SSH] completed
+[SSH] exit-status: 0
+
+[SSH] executing post build script:
+
+
+Finished: SUCCESS

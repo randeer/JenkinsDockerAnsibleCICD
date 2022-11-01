@@ -1,0 +1,124 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/website-docker
+[website-docker] $ /bin/sh -xe /tmp/jenkins4753276607141589208.sh
++ echo 5
++ echo 5
++ echo jenkins-website-docker-5
++ echo website-docker
++ pwd
+/var/jenkins_home/workspace/website-docker
++ scp -i /var/jenkins_home/ansible/dias_key /tmp/.auth root@docker-host:/tmp/.auth
+[SSH] script:
+
+pwd
+
+/home/jenkins/code/web_automate-2.sh
+
+[SSH] executing...
+Cloning into 'java_tomcat'...
+/root
+****************************************************************************************
+****************************************************************************************
+*****************AUTOMATION STARTED*****************************************************
+*****************************Checking Changes********************************************
+**********************Cloning the repo***************************************************
+************************Cloned the latest repo*******************************************
+*********************Building the website************************************************
+***************************Removing the cache********************************************
+website-build
+*************************Copying the WAR to folder***************************************
+************************Building Docker Image********************************************
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 92B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/tomcat:latest
+#3 DONE 0.2s
+
+#4 [internal] load build context
+#4 transferring context: 84.49kB done
+#4 DONE 0.1s
+
+#5 [1/2] FROM docker.io/library/tomcat@sha256:a24495b50762ae6d0310f6ea9ccd2fa830cebc621a8a0162f828e9d046dd2a85
+#5 resolve docker.io/library/tomcat@sha256:a24495b50762ae6d0310f6ea9ccd2fa830cebc621a8a0162f828e9d046dd2a85 0.0s done
+#5 sha256:9901108da602d32689cff19b10112dcddd4578fe79e612e34a7dafa9f2b3ea09 0B / 176B 0.1s
+#5 sha256:a24495b50762ae6d0310f6ea9ccd2fa830cebc621a8a0162f828e9d046dd2a85 1.21kB / 1.21kB done
+#5 sha256:6dd589e606022f555f8a39d4889e4a37e4e14470f4c9a9f57a79c8b9cdccbfc7 12.17kB / 12.17kB done
+#5 sha256:d6fe64428cdee06095c84d61fd2aea27ca69ef3b8d0acb3d3ebb9a443472c7b5 0B / 192.15MB 0.1s
+#5 sha256:91da1f49d3bacd006bd42e1abd6ebcad91cfaf9caacdcaa47d1ab136f9228e79 1.79kB / 1.79kB done
+#5 sha256:c5c735a83dbd58e1c83f8d52abdc51068e27c00405f53d59802d4954a6b5398a 0B / 16.99MB 0.1s
+#5 sha256:9901108da602d32689cff19b10112dcddd4578fe79e612e34a7dafa9f2b3ea09 176B / 176B 0.1s done
+#5 sha256:c5c735a83dbd58e1c83f8d52abdc51068e27c00405f53d59802d4954a6b5398a 12.20MB / 16.99MB 0.2s
+#5 sha256:a86e915b5d6a367461177b3afde53a5a394b1c654aaa235a8bc3cd1d21d7751e 0B / 174B 0.2s
+#5 sha256:c5c735a83dbd58e1c83f8d52abdc51068e27c00405f53d59802d4954a6b5398a 16.99MB / 16.99MB 0.3s done
+#5 sha256:a86e915b5d6a367461177b3afde53a5a394b1c654aaa235a8bc3cd1d21d7751e 174B / 174B 0.3s done
+#5 sha256:6bf9140ba1d5f2a9dfa051864d6e6c09625931a47f594a4238096b5ccb5b9d83 12.92MB / 12.92MB 0.5s
+#5 sha256:769f39243fd8bb58c1072d2bff3b1d51d6fc50a26bb5937dd9181bbf662c5665 131B / 131B 0.4s done
+#5 extracting sha256:c5c735a83dbd58e1c83f8d52abdc51068e27c00405f53d59802d4954a6b5398a
+#5 sha256:6bf9140ba1d5f2a9dfa051864d6e6c09625931a47f594a4238096b5ccb5b9d83 12.92MB / 12.92MB 0.5s done
+#5 extracting sha256:c5c735a83dbd58e1c83f8d52abdc51068e27c00405f53d59802d4954a6b5398a 1.0s done
+#5 sha256:d6fe64428cdee06095c84d61fd2aea27ca69ef3b8d0acb3d3ebb9a443472c7b5 10.49MB / 192.15MB 2.3s
+#5 sha256:d6fe64428cdee06095c84d61fd2aea27ca69ef3b8d0acb3d3ebb9a443472c7b5 27.26MB / 192.15MB 2.5s
+#5 sha256:d6fe64428cdee06095c84d61fd2aea27ca69ef3b8d0acb3d3ebb9a443472c7b5 68.16MB / 192.15MB 2.7s
+#5 sha256:d6fe64428cdee06095c84d61fd2aea27ca69ef3b8d0acb3d3ebb9a443472c7b5 94.37MB / 192.15MB 2.8s
+#5 sha256:d6fe64428cdee06095c84d61fd2aea27ca69ef3b8d0acb3d3ebb9a443472c7b5 140.51MB / 192.15MB 3.0s
+#5 sha256:d6fe64428cdee06095c84d61fd2aea27ca69ef3b8d0acb3d3ebb9a443472c7b5 182.45MB / 192.15MB 3.2s
+#5 sha256:d6fe64428cdee06095c84d61fd2aea27ca69ef3b8d0acb3d3ebb9a443472c7b5 192.15MB / 192.15MB 3.3s
+#5 sha256:d6fe64428cdee06095c84d61fd2aea27ca69ef3b8d0acb3d3ebb9a443472c7b5 192.15MB / 192.15MB 4.2s done
+#5 extracting sha256:d6fe64428cdee06095c84d61fd2aea27ca69ef3b8d0acb3d3ebb9a443472c7b5
+#5 extracting sha256:d6fe64428cdee06095c84d61fd2aea27ca69ef3b8d0acb3d3ebb9a443472c7b5 4.0s done
+#5 extracting sha256:9901108da602d32689cff19b10112dcddd4578fe79e612e34a7dafa9f2b3ea09 done
+#5 extracting sha256:a86e915b5d6a367461177b3afde53a5a394b1c654aaa235a8bc3cd1d21d7751e
+#5 extracting sha256:a86e915b5d6a367461177b3afde53a5a394b1c654aaa235a8bc3cd1d21d7751e done
+#5 extracting sha256:6bf9140ba1d5f2a9dfa051864d6e6c09625931a47f594a4238096b5ccb5b9d83
+#5 extracting sha256:6bf9140ba1d5f2a9dfa051864d6e6c09625931a47f594a4238096b5ccb5b9d83 0.4s done
+#5 extracting sha256:769f39243fd8bb58c1072d2bff3b1d51d6fc50a26bb5937dd9181bbf662c5665 done
+#5 DONE 10.5s
+
+#6 [2/2] COPY index.war /usr/local/tomcat/webapps/
+#6 DONE 0.1s
+
+#7 exporting to image
+#7 exporting layers
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+#7 exporting layers 1.3s done
+#7 writing image sha256:c6a32a86190b45fc9edd80d5445061bb8b443dfb40de3d96bfc3db5c74e0f4c3 done
+#7 naming to docker.io/library/randeer-cv:jenkins-website-docker-5 done
+#7 DONE 1.3s
+***********************Built the docker image********************************************
+************************Pushing the created image to the registry************************
+The push refers to repository [20.1.190.133:5000/randeer-cv]
+dbc4e9846383: Preparing
+fa6c9c594afc: Preparing
+36fbd9312128: Preparing
+1281e392e7ce: Preparing
+c5a3ca16e449: Preparing
+cb61c67f5bb8: Preparing
+e632c4a5940c: Preparing
+7ea4455e747e: Preparing
+e632c4a5940c: Waiting
+7ea4455e747e: Waiting
+cb61c67f5bb8: Waiting
+1281e392e7ce: Pushed
+c5a3ca16e449: Pushed
+dbc4e9846383: Pushed
+fa6c9c594afc: Pushed
+36fbd9312128: Pushed
+e632c4a5940c: Pushed
+7ea4455e747e: Pushed
+cb61c67f5bb8: Pushed
+5: digest: sha256:79d23dbc6f599091c08ed0162038c45cce9826abfade990d5f5d2e790259ebe2 size: 1997
+********************TASK COMPLETED*******************************************************
+*****************************************************************************************
+*****************************************************************************************
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

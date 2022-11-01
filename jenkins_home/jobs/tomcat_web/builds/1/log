@@ -1,0 +1,23 @@
+Started by user [8mha:////4EhsFNDgOXrviJORZRsP80CcdVHpMhjB3vst5ulqTF8SAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9osTijNzM7EQA8kke1sMAAAA=[0mrashmika
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/tomcat_web
+The recommended git tool is: NONE
+using credential 9a8e5cca-d2ee-4f20-858a-e231c62099ab
+Cloning the remote Git repository
+Cloning repository http://20.1.190.133:8090/jenkins/java_tomcat.git
+ > git init /var/jenkins_home/workspace/tomcat_web # timeout=10
+Fetching upstream changes from http://20.1.190.133:8090/jenkins/java_tomcat.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- http://20.1.190.133:8090/jenkins/java_tomcat.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://20.1.190.133:8090/jenkins/java_tomcat.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 55018c352502608edadaad2ce129016e7b8f6fab (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 55018c352502608edadaad2ce129016e7b8f6fab # timeout=10
+Commit message: "try_new-1"
+First time build. Skipping changelog.
+Finished: SUCCESS

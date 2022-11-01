@@ -1,0 +1,59 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ssh_remote
+The recommended git tool is: NONE
+using credential 9a8e5cca-d2ee-4f20-858a-e231c62099ab
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/ssh_remote/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://20.1.190.133:8090/jenkins/maven.git # timeout=10
+Fetching upstream changes from http://20.1.190.133:8090/jenkins/maven.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- http://20.1.190.133:8090/jenkins/maven.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 27ba2f998b19ab26247d33aef6ccf574e2eafb04 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 27ba2f998b19ab26247d33aef6ccf574e2eafb04 # timeout=10
+Commit message: "rashmika_manawadu"
+ > git rev-list --no-walk 27ba2f998b19ab26247d33aef6ccf574e2eafb04 # timeout=10
+[SSH] script:
+
+cd /home/jenkins/code
+
+./automate_new.sh
+
+[SSH] executing...
+Cloning into 'maven'...
+Build number is 
+Build tag is 
+Job name is 
+Build ID is 
+this is the   and this is it is  
+*****************************
+******Building Jar***********
+PROCESSING...................
+**deleting old cache.....****
+**cloning new repo***********
+**building jar on docker*****
+invalid tag "java-app:": invalid reference format
+Error parsing reference: "java-app:" is not a valid repository/tag: invalid reference format
+invalid reference format
+Error response from daemon: invalid reference format
+Error response from daemon: invalid reference format
+destroying docker maven image
+my-maven-project
+**coping build to prod********
+*****************************
+******Building Docker********
+*****************************
+Sending image to the repo****
+*****************************
+**Cleaning up images*********
+******************************
+******Completed**************
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

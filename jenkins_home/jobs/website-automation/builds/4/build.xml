@@ -1,0 +1,90 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1239.v71b_b_a_124a_725">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@612.v84da_9c54906d">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1189.vf61b_a_5e2f62e">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2802.v5ea_628154b_c2">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>197</queueId>
+  <timestamp>1667202498595</timestamp>
+  <startTime>1667202498601</startTime>
+  <result>SUCCESS</result>
+  <duration>16497</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>def remote = [:]
+remote.name = &quot;docker-host&quot;
+remote.host = &quot;docker-host&quot;
+remote.allowAnyHosts = true
+
+node {
+    withCredentials([sshUserPrivateKey(credentialsId: &apos;c95ca5d0-c62e-4a56-88cf-116069621dfd&apos;, keyFileVariable: &apos;identity&apos;, passphraseVariable: &apos;&apos;, usernameVariable: &apos;root&apos;)]) {
+        remote.user = root
+        remote.identityFile = identity
+        stage(&quot;Configuring Enviroment&quot;){
+            sh &apos;./build.sh&apos;
+            sshCommand remote: remote, command: &quot;/home/jenkins/code/web_automate-1.sh&quot;
+        }
+        stage(&quot;Building War File&quot;) {
+            sh &apos;hostname&apos;
+            sshCommand remote: remote, command: &quot;/home/jenkins/code/web_automate-2.sh&quot;
+        }
+        stage(&quot;Building Docker image&quot;){
+            sshCommand remote: remote, command: &quot;/home/jenkins/code/web_automate-3.sh&quot;
+        }
+        stage(&quot;Pushing to the registry&quot;){
+            sshCommand remote: remote, command: &quot;/home/jenkins/code/web_automate-4.sh&quot;
+        }
+    }
+}
+
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>335452041</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>4977693</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>755073113</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>21330637</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>219741395</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>33</iota>
+    <head>1:33</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

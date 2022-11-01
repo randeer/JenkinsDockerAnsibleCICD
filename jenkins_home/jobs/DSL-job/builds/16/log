@@ -1,0 +1,12 @@
+Started by user [8mha:////4EhsFNDgOXrviJORZRsP80CcdVHpMhjB3vst5ulqTF8SAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9osTijNzM7EQA8kke1sMAAAA=[0mrashmika
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/DSL-job
+Processing provided DSL script
+ERROR: startup failed:
+script: 5: Unknown type: IMPORT at line: 5 column: 1. File: script @ line 5, column 1.
+   import groovy.json.JsonSlurper
+   ^
+
+1 error
+
+Finished: FAILURE

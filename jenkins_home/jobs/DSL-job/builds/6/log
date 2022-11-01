@@ -1,0 +1,6 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/DSL-job
+Processing provided DSL script
+ERROR: (script, line 6) No signature of method: javaposse.jobdsl.dsl.helpers.ScmContext.credentials() is applicable for argument types: (java.lang.String) values: [manawadu]
+Finished: FAILURE

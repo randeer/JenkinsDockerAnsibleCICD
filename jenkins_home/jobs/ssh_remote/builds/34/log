@@ -1,0 +1,110 @@
+Started by user [8mha:////4EhsFNDgOXrviJORZRsP80CcdVHpMhjB3vst5ulqTF8SAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9osTijNzM7EQA8kke1sMAAAA=[0mrashmika
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ssh_remote
+The recommended git tool is: NONE
+using credential 9a8e5cca-d2ee-4f20-858a-e231c62099ab
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/ssh_remote/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://20.1.190.133:8090/jenkins/maven.git # timeout=10
+Fetching upstream changes from http://20.1.190.133:8090/jenkins/maven.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- http://20.1.190.133:8090/jenkins/maven.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision cbd6fd41c441731ad3b115621632b6748c620468 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cbd6fd41c441731ad3b115621632b6748c620468 # timeout=10
+Commit message: "last testing"
+ > git rev-list --no-walk cbd6fd41c441731ad3b115621632b6748c620468 # timeout=10
+[ssh_remote] $ /bin/sh -xe /tmp/jenkins7520978672609728143.sh
++ echo 34
++ echo 34
++ echo jenkins-ssh_remote-34
++ echo ssh_remote
++ pwd
+/var/jenkins_home/workspace/ssh_remote
++ scp -i /var/jenkins_home/ansible/dias_key /tmp/.auth root@docker-host:/tmp/.auth
+[SSH] script:
+
+cd /home/jenkins/code
+
+./automate_new.sh
+
+[SSH] executing...
+Cloning into 'maven'...
+Build number is 34
+Build tag is jenkins-ssh_remote-34
+Job name is ssh_remote
+Build ID is 34
+this is the  ssh_remote and this is it is  jenkins-ssh_remote-34
+*****************************
+******Building Jar***********
+PROCESSING...................
+**deleting old cache.....****
+**cloning new repo***********
+**building jar on docker*****
+destroying docker maven image
+my-maven-project
+**coping build to prod********
+*****************************
+******Building Docker********
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 31B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/openjdk:latest
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 2.78kB done
+#4 DONE 0.0s
+
+#5 [1/3] FROM docker.io/library/openjdk
+#5 CACHED
+
+#6 [2/3] COPY rashmika.jar /usr/src/myapp/app.jar
+#6 DONE 0.1s
+
+#7 [3/3] WORKDIR /usr/src/myapp
+#7 DONE 0.1s
+
+#8 exporting to image
+#8 exporting layers
+#8 exporting layers 0.7s done
+#8 writing image sha256:62cf9f1cdb87a3054939dd5d18a071766e980381d7a6d7b964c671c774e911fa done
+#8 naming to docker.io/library/java-app:jenkins-ssh_remote-34 done
+#8 DONE 0.7s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+*****************************
+Sending image to the repo****
+The push refers to repository [20.1.190.133:5000/rashmika_manawadu]
+5f70bf18a086: Preparing
+fa6caad8c4b0: Preparing
+af156afd9124: Preparing
+9c981436b96c: Preparing
+847f66a69f5a: Preparing
+af156afd9124: Layer already exists
+9c981436b96c: Layer already exists
+847f66a69f5a: Layer already exists
+5f70bf18a086: Layer already exists
+fa6caad8c4b0: Pushed
+34: digest: sha256:53ebb505d2872e14d9b016ad162f0c5045ccedea1aa280b1c2554df7170baecc size: 1368
+*****************************
+**Cleaning up images*********
+Untagged: java-app:jenkins-ssh_remote-34
+Untagged: 20.1.190.133:5000/rashmika_manawadu:34
+Untagged: 20.1.190.133:5000/rashmika_manawadu@sha256:53ebb505d2872e14d9b016ad162f0c5045ccedea1aa280b1c2554df7170baecc
+Deleted: sha256:62cf9f1cdb87a3054939dd5d18a071766e980381d7a6d7b964c671c774e911fa
+******************************
+******Completed**************
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

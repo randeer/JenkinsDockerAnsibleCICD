@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-10-12 09:00:30.936 UTC</timestamp>
+  <md5sum>49acfa84d89807517b8676052af2caec</md5sum>
+  <fileName>Credential id=SAS_TOKEN name=SAS_TOKEN</fileName>
+  <usages>
+    <entry>
+      <string>mysql_backup</string>
+      <ranges>11</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,5 @@
+- hosts: linux
+  tasks:
+   - shell: echo "Rashmika Manawadu" >> rashmika.txt
+   - debug:
+       msg: "{{ MSG }}"

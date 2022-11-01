@@ -1,0 +1,7 @@
+FROM openjdk
+
+COPY rashmika.jar /usr/src/myapp/app.jar
+
+WORKDIR /usr/src/myapp
+
+CMD /usr/sbin/sshd -D

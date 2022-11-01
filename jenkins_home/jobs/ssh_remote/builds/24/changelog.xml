@@ -1,0 +1,11 @@
+commit d6b471e843824c6f6cfccaa36f7e06fd742ff793
+tree 3d01e48decdb0ea574d6a455e18bbaeca32d56cb
+parent 9a2e03bcd67ff5a55c8f48641cc1bae1b3ae9f2a
+author Ubuntu <randeer@devops.ihbftibvl3fetmyvpinhq21n3g.cx.internal.cloudapp.net> 2022-10-30 04:44:35 +0000
+committer Ubuntu <randeer@devops.ihbftibvl3fetmyvpinhq21n3g.cx.internal.cloudapp.net> 2022-10-30 04:44:35 +0000
+
+    new-changes
+
+
+:100644 100644 a26ed7634d1a199d2d1315b906a27052a86d7ff1 8c56614656fdb21eb30492f2f5b7869ce2e918aa M	src/main/java/com/mycompany/app/App.java
+:100644 100644 48618ecdc1ec8e4843d5d2b689f2dc768f18c89d eec3578d5d7d741ac1e6b618e664c2cea384eca5 M	src/test/java/com/mycompany/app/AppTest.java

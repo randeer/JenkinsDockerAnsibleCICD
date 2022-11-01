@@ -1,0 +1,11 @@
+commit 7f3304caf249d356524a332b369e17caa630b17b
+tree 4ea28a13476539dcd327d2b6f8649fce43244e44
+parent 55018c352502608edadaad2ce129016e7b8f6fab
+author Ubuntu <randeer@devops.ihbftibvl3fetmyvpinhq21n3g.cx.internal.cloudapp.net> 2022-10-23 14:14:33 +0000
+committer Ubuntu <randeer@devops.ihbftibvl3fetmyvpinhq21n3g.cx.internal.cloudapp.net> 2022-10-23 14:14:33 +0000
+
+    added_Rashmika_image
+
+
+:100644 100644 90ba932d6c2c50b991dcd9dc06d59e57ed70c245 5f0a0a0d683d045749ba8bd5e43621e04c12f804 M	src/main/webapp/index.jsp
+:000000 100644 0000000000000000000000000000000000000000 b69e6cdd8ac7875f9eb315560feb23de576ed34c A	src/main/webapp/rashmika.jpg

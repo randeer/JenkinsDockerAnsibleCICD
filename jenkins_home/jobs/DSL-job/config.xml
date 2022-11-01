@@ -1,0 +1,57 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.81">
+      <scriptText>job(&apos;DSL-web-automation&apos;) {
+
+    description(&apos;DSL-web-automation&apos;)
+
+import groovy.json.JsonSlurper
+
+def project = &apos;java_tomcat.git&apos;
+def branchApi = new URL(&quot;http://20.1.190.133:8090/jenkins/${project}/branches&quot;)
+def branches = new JsonSlurper().parse(branchApi.newReader())
+
+branches.each {
+    def branchName = it.name
+    String jobName = &quot;${project}-${branchName}&quot;.replaceAll(&apos;/&apos;, &apos;-&apos;)
+    job(jobName) {
+        scm {
+            git {
+                branch(branchName)
+                remote {
+                    url(&quot;http://20.1.190.133:8090/jenkins/${project}.git&quot;)
+                    credentials(&quot;9a8e5cca-d2ee-4f20-858a-e231c62099ab&quot;)
+                }
+            }
+        }
+    }
+}
+}</scriptText>
+      <usingScriptText>true</usingScriptText>
+      <sandbox>false</sandbox>
+      <ignoreExisting>false</ignoreExisting>
+      <ignoreMissingFiles>false</ignoreMissingFiles>
+      <failOnMissingPlugin>false</failOnMissingPlugin>
+      <failOnSeedCollision>false</failOnSeedCollision>
+      <unstableOnDeprecation>false</unstableOnDeprecation>
+      <removedJobAction>IGNORE</removedJobAction>
+      <removedViewAction>IGNORE</removedViewAction>
+      <removedConfigFilesAction>IGNORE</removedConfigFilesAction>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+    </javaposse.jobdsl.plugin.ExecuteDslScripts>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

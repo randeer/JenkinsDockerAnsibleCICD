@@ -1,0 +1,40 @@
+Started by user [8mha:////4EhsFNDgOXrviJORZRsP80CcdVHpMhjB3vst5ulqTF8SAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9osTijNzM7EQA8kke1sMAAAA=[0mrashmika
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/mysql_backup
+[SSH] executing pre build script:
+DATABASE_HOST="db_host"
+SQL_PASSWD=**********
+CONTAINER="mysqlbackup"
+STORAGE_ACCOUNT="sqlrandeer"
+SAS_TOKEN=**********
+
+/home/dias/sql_backup.sh   $DATABASE_HOST $SQL_PASSWD $STORAGE_ACCOUNT $CONTAINER $SAS_TOKEN
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+INFO: Scanning...
+INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+
+Job 60fe8204-b212-6945-788a-62b8bd8bbfe2 has started
+Log file is located at: /home/dias/.azcopy/60fe8204-b212-6945-788a-62b8bd8bbfe2.log
+
+100.0 %, 1 Done, 0 Failed, 0 Pending, 0 Skipped, 1 Total, 2-sec Throughput (Mb/s): 14.9816
+
+
+Job 60fe8204-b212-6945-788a-62b8bd8bbfe2 summary
+Elapsed Time (Minutes): 0.0334
+Number of File Transfers: 1
+Number of Folder Property Transfers: 0
+Total Number of Transfers: 1
+Number of Transfers Completed: 1
+Number of Transfers Failed: 0
+Number of Transfers Skipped: 0
+TotalBytesTransferred: 3747806
+Final Job Status: Completed
+
+
+[SSH] completed
+[SSH] exit-status: 0
+
+[SSH] executing post build script:
+
+
+Finished: SUCCESS

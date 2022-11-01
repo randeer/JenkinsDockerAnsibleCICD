@@ -1,0 +1,32 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jvnet.hudson.plugins.SSHBuildWrapper_-DescriptorImpl plugin="ssh@2.6.1">
+  <sites>
+    <org.jvnet.hudson.plugins.CredentialsSSHSite>
+      <hostname>remote_ubuntu</hostname>
+      <username>dias</username>
+      <port>22</port>
+      <credentialId>629241ff-4de9-4de8-b17f-cede6287cc91</credentialId>
+      <serverAliveInterval>0</serverAliveInterval>
+      <timeout>0</timeout>
+      <pty>false</pty>
+    </org.jvnet.hudson.plugins.CredentialsSSHSite>
+    <org.jvnet.hudson.plugins.CredentialsSSHSite>
+      <hostname>docker-host</hostname>
+      <username>jenkins</username>
+      <port>22</port>
+      <credentialId>e93fa6d0-5319-4a84-828a-36824561c3f9</credentialId>
+      <serverAliveInterval>0</serverAliveInterval>
+      <timeout>0</timeout>
+      <pty>false</pty>
+    </org.jvnet.hudson.plugins.CredentialsSSHSite>
+    <org.jvnet.hudson.plugins.CredentialsSSHSite>
+      <hostname>docker-host</hostname>
+      <username>root</username>
+      <port>22</port>
+      <credentialId>c95ca5d0-c62e-4a56-88cf-116069621dfd</credentialId>
+      <serverAliveInterval>0</serverAliveInterval>
+      <timeout>0</timeout>
+      <pty>false</pty>
+    </org.jvnet.hudson.plugins.CredentialsSSHSite>
+  </sites>
+</org.jvnet.hudson.plugins.SSHBuildWrapper_-DescriptorImpl>

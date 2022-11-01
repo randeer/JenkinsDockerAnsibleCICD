@@ -1,0 +1,9 @@
+[linux]
+
+remote_ubuntu
+
+[linux:vars]
+
+ansible_host=remote_ubuntu 
+ansible_user=dias 
+ansible_private_key_file=/var/jenkins_home/ansible/dias_key

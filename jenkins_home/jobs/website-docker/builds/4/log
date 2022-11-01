@@ -1,0 +1,74 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/website-docker
+[website-docker] $ /bin/sh -xe /tmp/jenkins6076170345603695986.sh
++ echo 4
++ echo 4
++ echo jenkins-website-docker-4
++ echo website-docker
++ pwd
+/var/jenkins_home/workspace/website-docker
++ scp -i /var/jenkins_home/ansible/dias_key /tmp/.auth root@docker-host:/tmp/.auth
+[SSH] script:
+
+pwd
+
+/home/jenkins/code/web_automate-2.sh
+
+[SSH] executing...
+/root
+Cloning into 'java_tomcat'...
+****************************************************************************************
+****************************************************************************************
+*****************AUTOMATION STARTED*****************************************************
+*****************************Checking Changes********************************************
+**********************Cloning the repo***************************************************
+************************Cloned the latest repo*******************************************
+*********************Building the website************************************************
+cp: cannot stat '/usr/src/mymaven/code/java_tomcat/target/java-tomcat-maven-example.war': No such file or directory
+***************************Removing the cache********************************************
+website-build
+*************************Copying the WAR to folder***************************************
+************************Building Docker Image********************************************
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 92B done
+#1 DONE 0.1s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.1s
+
+#3 [internal] load metadata for docker.io/library/tomcat:latest
+#3 DONE 0.5s
+
+#4 [1/2] FROM docker.io/library/tomcat@sha256:a24495b50762ae6d0310f6ea9ccd2fa830cebc621a8a0162f828e9d046dd2a85
+#4 resolve docker.io/library/tomcat@sha256:a24495b50762ae6d0310f6ea9ccd2fa830cebc621a8a0162f828e9d046dd2a85
+failed to solve: failed to compute cache key: "/index.war" not found: not found
+Error response from daemon: No such image: randeer-cv:jenkins-website-docker-4
+An image does not exist locally with the tag: 20.1.190.133:5000/randeer-cv
+#4 resolve docker.io/library/tomcat@sha256:a24495b50762ae6d0310f6ea9ccd2fa830cebc621a8a0162f828e9d046dd2a85 0.0s done
+#4 sha256:91da1f49d3bacd006bd42e1abd6ebcad91cfaf9caacdcaa47d1ab136f9228e79 1.79kB / 1.79kB done
+#4 sha256:a24495b50762ae6d0310f6ea9ccd2fa830cebc621a8a0162f828e9d046dd2a85 1.21kB / 1.21kB done
+#4 sha256:6dd589e606022f555f8a39d4889e4a37e4e14470f4c9a9f57a79c8b9cdccbfc7 12.17kB / 12.17kB done
+#4 CANCELED
+
+#5 [internal] load build context
+#5 transferring context: 2B done
+#5 DONE 0.1s
+
+#6 [2/2] COPY index.war /usr/local/tomcat/webapps/
+#6 ERROR: "/index.war" not found: not found
+------
+ > [2/2] COPY index.war /usr/local/tomcat/webapps/:
+------
+***********************Built the docker image********************************************
+************************Pushing the created image to the registry************************
+The push refers to repository [20.1.190.133:5000/randeer-cv]
+********************TASK COMPLETED*******************************************************
+*****************************************************************************************
+*****************************************************************************************
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

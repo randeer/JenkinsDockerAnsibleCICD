@@ -1,0 +1,27 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-10-21 13:12:57.914 UTC</timestamp>
+  <md5sum>0424c12a260ce215d941081cec28be94</md5sum>
+  <fileName>Credential id=9a8e5cca-d2ee-4f20-858a-e231c62099ab name=manawadu/******</fileName>
+  <usages>
+    <entry>
+      <string>tomcat_web</string>
+      <ranges>1-18</ranges>
+    </entry>
+    <entry>
+      <string>maven-test</string>
+      <ranges>12-22</ranges>
+    </entry>
+    <entry>
+      <string>ssh_remote</string>
+      <ranges>18-37</ranges>
+    </entry>
+  </usages>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@1189.vf61b_a_5e2f62e">
+      <timestamp>1667187356600</timestamp>
+      <itemFullName>pipeline-test</itemFullName>
+      <timestamp0>1667187356600</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

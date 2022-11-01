@@ -1,0 +1,124 @@
+Started by user [8mha:////4EhsFNDgOXrviJORZRsP80CcdVHpMhjB3vst5ulqTF8SAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9osTijNzM7EQA8kke1sMAAAA=[0mrashmika
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ssh_remote
+[SSH] executing pre build script:
+
+cd /home/jenkins/code
+./automate.sh
+rm: cannot remove 'maven/rashmika.jpg': Permission denied
+rm: cannot remove 'maven/pom.xml': Permission denied
+rm: cannot remove 'maven/src/test/java/com/mycompany/app/AppTest.java': Permission denied
+rm: cannot remove 'maven/src/main/java/com/mycompany/app/App.java': Permission denied
+rm: cannot remove 'maven/target/test-classes/com/mycompany/app/AppTest.class': Permission denied
+rm: cannot remove 'maven/target/classes/com/mycompany/app/App.class': Permission denied
+rm: cannot remove 'maven/target/generated-sources/annotations': Permission denied
+rm: cannot remove 'maven/target/surefire-reports/TEST-com.mycompany.app.AppTest.xml': Permission denied
+rm: cannot remove 'maven/target/surefire-reports/com.mycompany.app.AppTest.txt': Permission denied
+rm: cannot remove 'maven/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst': Permission denied
+rm: cannot remove 'maven/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst': Permission denied
+rm: cannot remove 'maven/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst': Permission denied
+rm: cannot remove 'maven/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst': Permission denied
+rm: cannot remove 'maven/target/maven-archiver/pom.properties': Permission denied
+rm: cannot remove 'maven/target/generated-test-sources/test-annotations': Permission denied
+rm: cannot remove 'maven/target/my-app-1.0-SNAPSHOT.jar': Permission denied
+rm: cannot remove 'maven/README.md': Permission denied
+rm: cannot remove 'maven/.git/logs/refs/heads/main': Permission denied
+rm: cannot remove 'maven/.git/logs/refs/remotes/origin/HEAD': Permission denied
+rm: cannot remove 'maven/.git/logs/HEAD': Permission denied
+rm: cannot remove 'maven/.git/objects/8f/94f88da0ad3d059ff1ea44c983630fbe1653f3': Permission denied
+rm: cannot remove 'maven/.git/objects/29/6ba5e57549cc6de0bd988d237f21d62d257d7b': Permission denied
+rm: cannot remove 'maven/.git/objects/a7/51f5cc0ad32a2dab42e17545377710fd69f4cc': Permission denied
+rm: cannot remove 'maven/.git/objects/a7/0013f609863381f568abeeccd16bd2a443dd3b': Permission denied
+rm: cannot remove 'maven/.git/objects/08/dd62f65751de6982d72556660a4ea5d583b224': Permission denied
+rm: cannot remove 'maven/.git/objects/ff/de2e253eb2d526983528efe4247b52a81a6af2': Permission denied
+rm: cannot remove 'maven/.git/objects/b8/f925c435847ff69bd107094b00244031cc0dae': Permission denied
+rm: cannot remove 'maven/.git/objects/1b/5e0c3f015fbe7358facf7496b43743af751b20': Permission denied
+rm: cannot remove 'maven/.git/objects/b3/0a0fc63abd3431d12b4f3d914e36571aabd8b2': Permission denied
+rm: cannot remove 'maven/.git/objects/7b/8e11d041f1eae3ee1fe6940ea0809ad20e315c': Permission denied
+rm: cannot remove 'maven/.git/objects/18/7d5c3ada371881889ad83b766435d74d919b95': Permission denied
+rm: cannot remove 'maven/.git/objects/18/0203cd5300d19e1e63a1c28a6b0b363b305df2': Permission denied
+rm: cannot remove 'maven/.git/objects/31/4ec61db47161c3f4cf5e0f7d75379820e3b492': Permission denied
+rm: cannot remove 'maven/.git/objects/31/efab1d4c2766ece36942d9bac95c7957ff88fb': Permission denied
+rm: cannot remove 'maven/.git/objects/31/d9f24f88e44bec14bbff1e6c5e8fbef21c31cd': Permission denied
+rm: cannot remove 'maven/.git/objects/ab/598f38bf066ef636dcb3bc5ef11510e08742c7': Permission denied
+rm: cannot remove 'maven/.git/objects/05/3e9a566ed09ccd3303e4781648a932e4529f6b': Permission denied
+rm: cannot remove 'maven/.git/objects/b6/9e6cdd8ac7875f9eb315560feb23de576ed34c': Permission denied
+rm: cannot remove 'maven/.git/objects/0d/4ace4a5e56b00f803b26bfec12e772e053aa3d': Permission denied
+rm: cannot remove 'maven/.git/objects/fa/25e4ece18a7a24b1a1a4ee03ecbcc13ace6cba': Permission denied
+rm: cannot remove 'maven/.git/objects/ae/9e9aad5083b59bc6d699400c7f49b2d704572e': Permission denied
+rm: cannot remove 'maven/.git/objects/90/0326666efa019537f80b75064f9bc60b8ac915': Permission denied
+rm: cannot remove 'maven/.git/objects/90/8bac851aef9be99dcc57a0efb36dc514d4e5ca': Permission denied
+rm: cannot remove 'maven/.git/objects/59/a893a627136bc5e93231d424e1d2fffc924d49': Permission denied
+rm: cannot remove 'maven/.git/objects/00/91e30cbe34aa3a4f7c2f4e6f75b8de09586490': Permission denied
+rm: cannot remove 'maven/.git/objects/00/f511b228438040616f5b08742aeca6f48cb6c7': Permission denied
+rm: cannot remove 'maven/.git/objects/3b/0f14690869845786b77124fdafd90f8fef88da': Permission denied
+rm: cannot remove 'maven/.git/objects/93/d43905a587335ab87a642ccbc976fcabb0e510': Permission denied
+rm: cannot remove 'maven/.git/objects/6f/3a1ad9ac66e909860b652e091e8baa7b4938ed': Permission denied
+rm: cannot remove 'maven/.git/objects/e4/122153180b08aebc103eb82f9825afe51efe53': Permission denied
+rm: cannot remove 'maven/.git/objects/e4/de3ba43ca2a319cfdc57507ab7704056941472': Permission denied
+rm: cannot remove 'maven/.git/objects/68/df69c0207d39f4673e05965f4216c3534cc675': Permission denied
+rm: cannot remove 'maven/.git/objects/96/cabc1a1ca710938110a9d15a5060086fdb95ca': Permission denied
+rm: cannot remove 'maven/.git/objects/40/efacc879fb31a44b5f9bbc5b2fabb3c427b614': Permission denied
+rm: cannot remove 'maven/.git/objects/82/5cf78a82b47f71263d4c32aac580a05c7f84d0': Permission denied
+rm: cannot remove 'maven/.git/objects/62/7545d2658806c38b3685fd7c2b03a7e2624c94': Permission denied
+rm: cannot remove 'maven/.git/objects/pack': Permission denied
+rm: cannot remove 'maven/.git/objects/b4/2ec4fa2422b4e85aa0fe3e9c38163c4915a012': Permission denied
+rm: cannot remove 'maven/.git/objects/07/724d55560038638018c99caca453aee98ffc00': Permission denied
+rm: cannot remove 'maven/.git/objects/info': Permission denied
+rm: cannot remove 'maven/.git/objects/47/ab5832c59b66341dfd13d437ee2a1453bd28d6': Permission denied
+rm: cannot remove 'maven/.git/objects/5a/6d57214d17ba7484046928cf2e933ec550b50a': Permission denied
+rm: cannot remove 'maven/.git/objects/25/b27dc7955142806c696f1efbda4bfbca58924f': Permission denied
+rm: cannot remove 'maven/.git/objects/e3/9bfe7fae446a3cc91debd45de22f7392231eae': Permission denied
+rm: cannot remove 'maven/.git/objects/26/f1a98e12fb8358536a0b4d7bbf0b5e6a9b0453': Permission denied
+rm: cannot remove 'maven/.git/objects/26/0385452027acc18d8fb3469dd889ba74c35297': Permission denied
+rm: cannot remove 'maven/.git/objects/de/ab9070ea6dc23b9df4f1eefe69763ec0e72005': Permission denied
+rm: cannot remove 'maven/.git/description': Permission denied
+rm: cannot remove 'maven/.git/packed-refs': Permission denied
+rm: cannot remove 'maven/.git/index': Permission denied
+rm: cannot remove 'maven/.git/config': Permission denied
+rm: cannot remove 'maven/.git/info/exclude': Permission denied
+rm: cannot remove 'maven/.git/branches': Permission denied
+rm: cannot remove 'maven/.git/refs/heads/main': Permission denied
+rm: cannot remove 'maven/.git/refs/tags': Permission denied
+rm: cannot remove 'maven/.git/refs/remotes/origin/HEAD': Permission denied
+rm: cannot remove 'maven/.git/hooks/update.sample': Permission denied
+rm: cannot remove 'maven/.git/hooks/prepare-commit-msg.sample': Permission denied
+rm: cannot remove 'maven/.git/hooks/fsmonitor-watchman.sample': Permission denied
+rm: cannot remove 'maven/.git/hooks/commit-msg.sample': Permission denied
+rm: cannot remove 'maven/.git/hooks/pre-commit.sample': Permission denied
+rm: cannot remove 'maven/.git/hooks/pre-push.sample': Permission denied
+rm: cannot remove 'maven/.git/hooks/post-update.sample': Permission denied
+rm: cannot remove 'maven/.git/hooks/pre-merge-commit.sample': Permission denied
+rm: cannot remove 'maven/.git/hooks/pre-rebase.sample': Permission denied
+rm: cannot remove 'maven/.git/hooks/pre-receive.sample': Permission denied
+rm: cannot remove 'maven/.git/hooks/pre-applypatch.sample': Permission denied
+rm: cannot remove 'maven/.git/hooks/applypatch-msg.sample': Permission denied
+rm: cannot remove 'maven/.git/HEAD': Permission denied
+rm: cannot remove 'maven/jenkins/Jenkinsfile': Permission denied
+rm: cannot remove 'maven/jenkins/scripts/deliver.sh': Permission denied
+fatal: destination path 'maven' already exists and is not an empty directory.
+the input device is not a TTY
+Error: No such container: my-maven-project
+cp: cannot create regular file 'jar/rashmika.jar': Permission denied
+time="2022-10-29T06:34:27Z" level=warning msg="The \"BUILD_TAG\" variable is not set. Defaulting to a blank string."
+invalid tag "java-app:": invalid reference format
+*****************************
+******Building Jar***********
+PROCESSING...................
+**deleting old cache.....****
+**cloning new repo***********
+**building jar on docker*****
+destroying docker maven image
+**coping build to prod********
+*****************************
+******Building Docker********
+*****************************
+******Completed**************
+
+[SSH] completed
+[SSH] exit-status: 0
+
+[SSH] executing post build script:
+
+
+Finished: SUCCESS

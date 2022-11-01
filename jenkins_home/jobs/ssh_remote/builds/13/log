@@ -1,0 +1,38 @@
+Started by user [8mha:////4EhsFNDgOXrviJORZRsP80CcdVHpMhjB3vst5ulqTF8SAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9osTijNzM7EQA8kke1sMAAAA=[0mrashmika
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ssh_remote
+[SSH] script:
+BUILD_ID="13"
+JOB_NAME="ssh_remote"
+BUILD_TAG="jenkins-ssh_remote-13"
+BUILD_NUMBER="13"
+
+echo "Build number is $BUILD_NUMBER"
+
+echo "Build tag is $BUILD_TAG"
+
+echo "Job name is $JOB_NAME"
+
+echo "Build ID is $BUILD_ID"
+
+cd /home/jenkins/code
+
+ls
+
+echo $JOB_NAME
+
+[SSH] executing...
+Build number is 13
+Build tag is jenkins-ssh_remote-13
+Job name is ssh_remote
+Build ID is 13
+automate.sh
+docker-compose.yml
+jar
+maven
+ssh_remote
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

@@ -1,0 +1,6 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/DSL-job
+Processing provided DSL script
+ERROR: (script, line 7) No such property: main for class: javaposse.jobdsl.dsl.helpers.scm.GitContext
+Finished: FAILURE

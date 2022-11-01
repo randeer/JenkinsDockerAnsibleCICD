@@ -1,0 +1,30 @@
+Started by user [8mha:////4EhsFNDgOXrviJORZRsP80CcdVHpMhjB3vst5ulqTF8SAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9osTijNzM7EQA8kke1sMAAAA=[0mrashmika
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ssh_remote
+The recommended git tool is: NONE
+using credential 9a8e5cca-d2ee-4f20-858a-e231c62099ab
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/ssh_remote/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://20.1.190.133:8090/jenkins/maven.git # timeout=10
+Fetching upstream changes from http://20.1.190.133:8090/jenkins/maven.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- http://20.1.190.133:8090/jenkins/maven.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision cbd6fd41c441731ad3b115621632b6748c620468 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cbd6fd41c441731ad3b115621632b6748c620468 # timeout=10
+Commit message: "last testing"
+ > git rev-list --no-walk cbd6fd41c441731ad3b115621632b6748c620468 # timeout=10
+[ssh_remote] $ /bin/sh -xe /tmp/jenkins16134654113944250933.sh
++ echo 31
++ echo 31
++ echo jenkins-ssh_remote-31
++ echo ssh_remote
++ scp -i ansible/dias_key root@docker-host
+usage: scp [-346ABCpqrTv] [-c cipher] [-F ssh_config] [-i identity_file]
+            [-J destination] [-l limit] [-o ssh_option] [-P port]
+            [-S program] source ... target
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

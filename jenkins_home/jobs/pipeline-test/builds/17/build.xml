@@ -1,0 +1,87 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@1239.v71b_b_a_124a_725">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>rashmika</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@612.v84da_9c54906d">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1189.vf61b_a_5e2f62e">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2802.v5ea_628154b_c2">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>170</queueId>
+  <timestamp>1667182960911</timestamp>
+  <startTime>1667182960919</startTime>
+  <result>SUCCESS</result>
+  <duration>3286</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>def remote = [:]
+remote.name = &quot;docker-host&quot;
+remote.host = &quot;docker-host&quot;
+remote.allowAnyHosts = true
+
+node {
+    withCredentials([sshUserPrivateKey(credentialsId: &apos;c95ca5d0-c62e-4a56-88cf-116069621dfd&apos;, keyFileVariable: &apos;identity&apos;, passphraseVariable: &apos;&apos;, usernameVariable: &apos;root&apos;)]) {
+        remote.user = root
+        remote.identityFile = identity
+        stage(&quot;Build Stage&quot;){
+            echo &quot;Rashmika&quot;
+        }
+        stage(&quot;SSH Steps Rocks!&quot;) {
+            sshCommand remote: remote, command: &quot;pwd&quot;
+        }
+        stage(&quot;Rashmika&quot;){
+            echo &quot;Rashmika&quot;
+        }
+    }
+}
+
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="concurrent-hash-map">
+      <entry>
+        <string>flowNode</string>
+        <long>249393332</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>97341675</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1171627406</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>273275521</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>492389353</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>26</iota>
+    <head>1:26</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

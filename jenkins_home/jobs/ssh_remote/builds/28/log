@@ -1,0 +1,120 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ssh_remote
+The recommended git tool is: NONE
+using credential 9a8e5cca-d2ee-4f20-858a-e231c62099ab
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/ssh_remote/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url http://20.1.190.133:8090/jenkins/maven.git # timeout=10
+Fetching upstream changes from http://20.1.190.133:8090/jenkins/maven.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- http://20.1.190.133:8090/jenkins/maven.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 27ba2f998b19ab26247d33aef6ccf574e2eafb04 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 27ba2f998b19ab26247d33aef6ccf574e2eafb04 # timeout=10
+Commit message: "rashmika_manawadu"
+ > git rev-list --no-walk 27ba2f998b19ab26247d33aef6ccf574e2eafb04 # timeout=10
+[SSH] script:
+BUILD_ID="28"
+JOB_NAME="ssh_remote"
+BUILD_TAG="jenkins-ssh_remote-28"
+BUILD_NUMBER="28"
+
+cd /home/jenkins/code
+
+echo "Build number is $BUILD_NUMBER"
+
+echo "Build tag is $BUILD_TAG"
+
+echo "Job name is $JOB_NAME"
+
+echo "Build ID is $BUILD_ID"
+
+export BUILD_TAG=$BUILD_TAG
+
+export BUILD_NUMBER=$BUILD_NUMBER
+
+echo "this is the  $JOB_NAME and this is it is  $BUILD_TAG"
+
+./automate.sh
+
+[SSH] executing...
+Cloning into 'maven'...
+Build number is 28
+Build tag is jenkins-ssh_remote-28
+Job name is ssh_remote
+Build ID is 28
+this is the  ssh_remote and this is it is  jenkins-ssh_remote-28
+*****************************
+******Building Jar***********
+PROCESSING...................
+**deleting old cache.....****
+**cloning new repo***********
+**building jar on docker*****
+destroying docker maven image
+my-maven-project
+**coping build to prod********
+*****************************
+******Building Docker********
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 31B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/openjdk:latest
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 2.78kB done
+#4 DONE 0.0s
+
+#5 [1/3] FROM docker.io/library/openjdk
+#5 CACHED
+
+#6 [2/3] COPY rashmika.jar /usr/src/myapp/app.jar
+#6 DONE 0.1s
+
+#7 [3/3] WORKDIR /usr/src/myapp
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+#7 DONE 0.1s
+
+#8 exporting to image
+#8 exporting layers
+#8 exporting layers 0.5s done
+#8 writing image sha256:5c525994dace953aad57bf5bc6e50425dfbf0c1924ff95804a17480d236e8605 done
+#8 naming to docker.io/library/java-app:jenkins-ssh_remote-28 done
+#8 DONE 0.6s
+*****************************
+Sending image to the repo****
+The push refers to repository [20.1.190.133:5000/rashmika_manawadu]
+5f70bf18a086: Preparing
+95d7018e1ad6: Preparing
+af156afd9124: Preparing
+9c981436b96c: Preparing
+847f66a69f5a: Preparing
+5f70bf18a086: Layer already exists
+847f66a69f5a: Layer already exists
+9c981436b96c: Layer already exists
+af156afd9124: Layer already exists
+95d7018e1ad6: Pushed
+28: digest: sha256:4f9fa9ff20b0b20ab05dcc2c68063ae88e8564a700d0a262190d19514390a3af size: 1368
+*****************************
+**Cleaning up images*********
+Untagged: java-app:jenkins-ssh_remote-28
+Untagged: 20.1.190.133:5000/rashmika_manawadu:28
+Untagged: 20.1.190.133:5000/rashmika_manawadu@sha256:4f9fa9ff20b0b20ab05dcc2c68063ae88e8564a700d0a262190d19514390a3af
+Deleted: sha256:5c525994dace953aad57bf5bc6e50425dfbf0c1924ff95804a17480d236e8605
+******************************
+******Completed**************
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

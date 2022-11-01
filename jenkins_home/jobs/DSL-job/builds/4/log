@@ -1,0 +1,7 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/DSL-job
+Processing provided DSL script
+Added items:
+    GeneratedJob{name='DSL-web-automation'}
+Finished: SUCCESS

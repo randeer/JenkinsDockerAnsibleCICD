@@ -1,0 +1,7 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/DSL-job
+Processing provided DSL script
+ERROR: (script, line 6) No signature of method: javaposse.jobdsl.dsl.helpers.ScmContext.git() is applicable for argument types: (java.util.LinkedHashMap) values: [[branch:main, changelog:false, credentialsId:9a8e5cca-d2ee-4f20-858a-e231c62099ab, ...]]
+Possible solutions: git(groovy.lang.Closure), git(java.lang.String), git(java.lang.String, groovy.lang.Closure), git(java.lang.String, java.lang.String), wait(), wait(long)
+Finished: FAILURE

@@ -1,0 +1,28 @@
+Started by user [8mha:////4EhsFNDgOXrviJORZRsP80CcdVHpMhjB3vst5ulqTF8SAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyOEgY+/dLi1CL9osTijNzM7EQA8kke1sMAAAA=[0mrashmika
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/website-docker
+[website-docker] $ /bin/sh -xe /tmp/jenkins16303327160606696753.sh
++ echo 3
++ echo 3
++ echo jenkins-website-docker-3
++ echo website-docker
++ pwd
+/var/jenkins_home/workspace/website-docker
++ scp -i /var/jenkins_home/ansible/dias_key /tmp/.auth root@docker-host:/tmp/.auth
+[SSH] script:
+
+pwd
+
+/home/jenkins/code/web_automate-2.sh
+
+[SSH] executing...
+Cloning into 'java_tomcat'...
+/root
+*****************************Checking Changes********************************************
+**********************Cloning the repo***************************************************
+************************Cloned the latest repo*******************************************
+
+[SSH] completed
+[SSH] exit-status: 0
+
+Finished: SUCCESS

@@ -1,0 +1,14 @@
+db_data
+db_data/*
+tomcat
+tomcat/*
+registry
+registry/*
+jenkinsCICD
+jenkinsCICD/*
+appdate
+appdate/*
+maven
+maven/*
+my_code
+my_code/*
